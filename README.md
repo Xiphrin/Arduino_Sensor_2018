@@ -10,7 +10,7 @@ float R0 = 10000;
 float T0 = 298.15;
 
 void setup() {
-Serial.begin(9600);
+  Serial.begin(9600);
 }
 
 void loop() {
