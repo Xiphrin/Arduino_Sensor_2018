@@ -1,23 +1,8 @@
-// # Arduino_Sensor_2018
+Hello our project is in the folder BreakOut.
 
-// This is our program
+In this folder you can found the code for the code for the arduino in the folder accelerometer and you can found the librairies in the file MMA_7455_UNO.zip.
 
-int ThermistorPin = 0;
-float adc;
-float T;
-float B = 3435.0;
-float R0 = 10000;
-float T0 = 298.15;
+To launch our project you need to connect the arduino on the COM6 (if you don't do this, it will not work), then upload the code on the arduino and then start the game.
+To move the paddle you will need to tilt the arduino on the left and on the right.
 
-void setup() {
-  Serial.begin(9600);
-}
-
-void loop() {
-  adc = analogRead(ThermistorPin);
-  T = 1/(log((R0*1024/adc - R0)/R0)/B+1/T0) - 273.15;
-  Serial.print("Temperature: ");
-  Serial.print(T);
-  Serial.println(" °C"); 
-  delay(500);
-}
+That's all.
